@@ -2,5 +2,5 @@
 
 To install:
 ```
-pip install py-mortgage
+
 ```
