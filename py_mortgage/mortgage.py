@@ -15,12 +15,11 @@ class Mortgage:
             the loan.
         """
         # test for non empty, term is int, interest_only is bool
-        self.rate = float(rate)
-        self.loan = float(loan)
-
         if type(term) != type(int(1)):
             raise ValueError("Term must be an integer")
 
+        self.rate = float(rate)
+        self.loan = float(loan)
         self.term = term
         self.interest_only = interest_only
         self.points = float(points)
@@ -49,6 +48,9 @@ class Mortgage:
         Format is either one of 'pandas_df' or 'json' to return either a Pandas
         DataFrame or a JSONized object from Pandas DataFrame
         """
+        if format is not in ['pandas_df', 'json']:
+            raise ValueError("format arg must be 'pandas_df' or 'json'.")
+
         columns = ['PMT', 'BOP RMB','PPMT', 'IPMT', 'EOP RMB']
         df = pd.DataFrame(columns = columns, index = range(1,self.term+1))
         pmt = self.get_pmt()
