@@ -118,7 +118,7 @@ class Mortgage:
 
     def describe(self):
         """
-        Print out information about the MOrtgage instance
+        Print out information about the Mortgage instance
         """
         print("\n===Describe Mortgage===\n")
         print("Interest Rate: \t", "{}%".format(round(self.rate*100,2)))
