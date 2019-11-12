@@ -43,12 +43,12 @@ class Mortgage:
         """
         return self.get_pmt() * period
 
-    def get_amortization_table(self, format='pandas_df', decimal_places=2):
+    def get_amortization_table(self, _format='pandas_df', decimal_places=2):
         """
         Format is either one of 'pandas_df' or 'json' to return either a Pandas
         DataFrame or a JSONized object from Pandas DataFrame
         """
-        if format is not in ['pandas_df', 'json']:
+        if _format not in ['pandas_df', 'json']:
             raise ValueError("format arg must be 'pandas_df' or 'json'.")
 
         columns = ['PMT', 'BOP RMB','PPMT', 'IPMT', 'EOP RMB']
@@ -67,7 +67,7 @@ class Mortgage:
         for c in columns:
             df[c] = df[c].map(lambda x: round(x, decimal_places))
 
-        if format == 'json':
+        if _format == 'json':
             return df.to_json()
 
         return df
