@@ -13,7 +13,7 @@ setuptools.setup(
     url="https://github.com/tdsprogramming/py-mortgage",
     packages=setuptools.find_packages(),
     install_requires = [
-        # 'pandas'
+        'pandas>=0.25.3'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
