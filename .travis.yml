@@ -9,9 +9,9 @@ script:
   - python py_mortgage/tests.py
 
   deploy:
-  provider: pypi
-  user: "__token__"
-  password:
-    secure: "h2b/AaaacVwW+KUlRgUF+Mj7z5mfFGdIlxy3sIp9Cfk9/KttZUL0cyGfCTaIdRVXOCQiSg0m1VhVmHhWr9QvNZb9tWx4AQGIrIqcmyDY+QViTFJOfwaCwTcz9AntQVbTJFtGjbrI6vGEL8DAKzTuz0wNuqktcg3HaExK3HKQgZ1gazHn3jvUWeYfbC+Jj7vil3jJtx7PH4rCtkXO4lrrqkQFTJSlb7y+3KCcYyNPdmyOfFcucOsuMTQ7DSK0kMkMEMocdxz5Go0GVrcO//4UnTQI8uhwcIX4bmzcRPV8wSBcdbpF9/UdwO6R2oVkko/D10I+DklSYnzruD1VqMY4A9MsryjJyvM0ZKejxI4rq7p1AltIuLnKD++OFtRZ+HXut5D2Vky8lzgwfJhQD77J1jJKJJpu11vgCFsBeqk7Vlj7X1vZnVM2y+znBGSCk73lzVCfhTB3dWSm5UDc3uglPBEUuytbXqVuFqZZNrTfkhPykVoOOfB2zoXduwgJjZnqhcdC5EqscbjnC1lZltuHmgg9Xa/hbyp824pN1n0b9UMMZz6owXY7F+2X/YencpZ59lkmQV+J+pSzXsXlNnKNiak+KdKA0MSTXNtobDs5MpDBRErRZ/SFSKaGQtR0PuNj/Sg90xL2nH9VVNBYskqOOgXTsolLVVUdlkFJuuDk1vo="  distributions: "sdist bdist_wheel"
-  on:
-    branch: master
+    provider: pypi
+    user: "__token__"
+    password:
+      secure: "h2b/AaaacVwW+KUlRgUF+Mj7z5mfFGdIlxy3sIp9Cfk9/KttZUL0cyGfCTaIdRVXOCQiSg0m1VhVmHhWr9QvNZb9tWx4AQGIrIqcmyDY+QViTFJOfwaCwTcz9AntQVbTJFtGjbrI6vGEL8DAKzTuz0wNuqktcg3HaExK3HKQgZ1gazHn3jvUWeYfbC+Jj7vil3jJtx7PH4rCtkXO4lrrqkQFTJSlb7y+3KCcYyNPdmyOfFcucOsuMTQ7DSK0kMkMEMocdxz5Go0GVrcO//4UnTQI8uhwcIX4bmzcRPV8wSBcdbpF9/UdwO6R2oVkko/D10I+DklSYnzruD1VqMY4A9MsryjJyvM0ZKejxI4rq7p1AltIuLnKD++OFtRZ+HXut5D2Vky8lzgwfJhQD77J1jJKJJpu11vgCFsBeqk7Vlj7X1vZnVM2y+znBGSCk73lzVCfhTB3dWSm5UDc3uglPBEUuytbXqVuFqZZNrTfkhPykVoOOfB2zoXduwgJjZnqhcdC5EqscbjnC1lZltuHmgg9Xa/hbyp824pN1n0b9UMMZz6owXY7F+2X/YencpZ59lkmQV+J+pSzXsXlNnKNiak+KdKA0MSTXNtobDs5MpDBRErRZ/SFSKaGQtR0PuNj/Sg90xL2nH9VVNBYskqOOgXTsolLVVUdlkFJuuDk1vo="  distributions: "sdist bdist_wheel"
+    on:
+      branch: master
