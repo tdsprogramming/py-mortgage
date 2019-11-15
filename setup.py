@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="py_mortgage",
-    version="0.1.1",
+    version="0.1.2",
     author="tdsprogramming",
     description="A package to handle mortgage calculations",
     long_description=long_description,
