@@ -7,13 +7,11 @@ install: pip install -r requirements.txt
 script:
   - ls 
   - python py_mortgage/tests.py
-before_deploy: ls
-deploy:
+
+  deploy:
   provider: pypi
   user: "__token__"
   password:
-    secure: "ulc5BI3cq1xrWG+7S4oPcJYSua2KEJtfzqt3y07WOy8pe8p/jSXyvtajvD2nKen5td93Mud/VsyoRV/M2R2tDAWbr4zlBJDBGimnF/VgbC7yIe4a/aDZ92IKzXhEqFXu3Wf4+sTZDT83DsUlvJ2ed7PUNP6AAxuur3Ozt6GEwReYWFmV9cFYQm4D/x7hvFQGDW02VRabRPm0kCY4VjYwgMbMidMmMCf/mj09kdddIzSfDvzzzTALmu5zmc9OwBiJ9sSZkOUI0FgJJvEemP6bJDiuDwBGiEs+89Nh1h+kE3nV1Zmvr0ja/Uz/bo3yBEZDYFpCcI1KJepX9Rs+1BX88XdrIpSlwf9EMci38FrRyJSot9AiZszNPdg3KSOXB6+rH3gF1feOGZiM0e8GEoxWeX+qTv3L7w14WsEyRbDNDl/s1kFXXcbI0HpGbg3vf9COJVWWOZdVNyavMaUrALf+PchPSeLUOTPo2b720GvTPLpoN/COVLa8F2ZvKkIQVGABgMngY4KeQ8Jc1P7BFWPENrMSjAl/S3DlqryHu+8YBBxpbp2Oiw1mrnn8FTL/uaixXwbOP76X3iQEkkSRi20Fc70bK3T1DcFR12M1TDfLhi/ZISpE5KamtBWNJ7xkSRwpZFUFC4pq/PLe46XXP63K54y2JnNixMyzF/NnkBJDflk="
-  skip_existing: true
-  distributions: "sdist bdist_wheel"
+    secure: "h2b/AaaacVwW+KUlRgUF+Mj7z5mfFGdIlxy3sIp9Cfk9/KttZUL0cyGfCTaIdRVXOCQiSg0m1VhVmHhWr9QvNZb9tWx4AQGIrIqcmyDY+QViTFJOfwaCwTcz9AntQVbTJFtGjbrI6vGEL8DAKzTuz0wNuqktcg3HaExK3HKQgZ1gazHn3jvUWeYfbC+Jj7vil3jJtx7PH4rCtkXO4lrrqkQFTJSlb7y+3KCcYyNPdmyOfFcucOsuMTQ7DSK0kMkMEMocdxz5Go0GVrcO//4UnTQI8uhwcIX4bmzcRPV8wSBcdbpF9/UdwO6R2oVkko/D10I+DklSYnzruD1VqMY4A9MsryjJyvM0ZKejxI4rq7p1AltIuLnKD++OFtRZ+HXut5D2Vky8lzgwfJhQD77J1jJKJJpu11vgCFsBeqk7Vlj7X1vZnVM2y+znBGSCk73lzVCfhTB3dWSm5UDc3uglPBEUuytbXqVuFqZZNrTfkhPykVoOOfB2zoXduwgJjZnqhcdC5EqscbjnC1lZltuHmgg9Xa/hbyp824pN1n0b9UMMZz6owXY7F+2X/YencpZ59lkmQV+J+pSzXsXlNnKNiak+KdKA0MSTXNtobDs5MpDBRErRZ/SFSKaGQtR0PuNj/Sg90xL2nH9VVNBYskqOOgXTsolLVVUdlkFJuuDk1vo="  distributions: "sdist bdist_wheel"
   on:
     branch: master
