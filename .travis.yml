@@ -1,18 +1,16 @@
 language: python
 python:
-  - "3.6"
-  - "3.7"
+- '3.6'
+- '3.7'
 install: pip install -r requirements.txt
-
 script:
-  - ls 
-  - python py_mortgage/tests.py
-
+- ls
+- python py_mortgage/tests.py
 deploy:
   provider: pypi
   user: tdsprogramming
   password:
-    secure: "h2b/AaaacVwW+KUlRgUF+Mj7z5mfFGdIlxy3sIp9Cfk9/KttZUL0cyGfCTaIdRVXOCQiSg0m1VhVmHhWr9QvNZb9tWx4AQGIrIqcmyDY+QViTFJOfwaCwTcz9AntQVbTJFtGjbrI6vGEL8DAKzTuz0wNuqktcg3HaExK3HKQgZ1gazHn3jvUWeYfbC+Jj7vil3jJtx7PH4rCtkXO4lrrqkQFTJSlb7y+3KCcYyNPdmyOfFcucOsuMTQ7DSK0kMkMEMocdxz5Go0GVrcO//4UnTQI8uhwcIX4bmzcRPV8wSBcdbpF9/UdwO6R2oVkko/D10I+DklSYnzruD1VqMY4A9MsryjJyvM0ZKejxI4rq7p1AltIuLnKD++OFtRZ+HXut5D2Vky8lzgwfJhQD77J1jJKJJpu11vgCFsBeqk7Vlj7X1vZnVM2y+znBGSCk73lzVCfhTB3dWSm5UDc3uglPBEUuytbXqVuFqZZNrTfkhPykVoOOfB2zoXduwgJjZnqhcdC5EqscbjnC1lZltuHmgg9Xa/hbyp824pN1n0b9UMMZz6owXY7F+2X/YencpZ59lkmQV+J+pSzXsXlNnKNiak+KdKA0MSTXNtobDs5MpDBRErRZ/SFSKaGQtR0PuNj/Sg90xL2nH9VVNBYskqOOgXTsolLVVUdlkFJuuDk1vo="
-  distributions: "sdist bdist_wheel"
+    secure: eMorKD9Ej2nqAAuIlsK00KiwIn2zzOWWT0jqAo3zqeaPXCE2zE6f2tNx8N1CWvHXT8lkax4+S67ULjCs+oh5HUTuloDkcQU27rvEpeTUOg44ZKUBLxvs3/El+EzPwZqb77KnlNJF6cCXLIakwov2Rw8owgOR21tAJMMtRMw5EX0r1vi3fQnal7H3Njtm3dZ18oMDLcUvmmipqyYXFKi4YgXNcRHihFFCFNuqatqIL3yrMdhQCxiC+w9yTPG/kFjEP8Zr5u9Y9P8G+hVs/u/VKymjsrPgQFTyuLPvZaTkzGfO+SsZ8vI9MZO+5kxo2SRIwbgf7nRxzMiCAhfvEmPL0kb5+trrCyeaTjIKrsqnh6R8XHKpiyOeAOGD2cU43rDMclPRw/mOY+Lb1jjOGR+0H+p5/plOLo9dPhkGllt9sV9WjZUnGlrSBfE8xT8WGrkEzb0JPWfs3iENeJDr5u+McRKh6h4zsjf5fL9rJwY6Dc4XV328XP2xR8zi2GU2kOJ2haUbUYijUKrzj+Ze+TGelcDRhzYovf7aGnkAkMhjjCGZAxaRlENcOOG0k8+qKSr8ifR+Aa93RsuhUh9vJvN3MpB4JaWiAQp+8/eg0Q4+RJkLdNlhp5Xvo5mySf4Wiye2G527mMGL0ehUMkj23zYx9R8kbmo9l22SkL1EytbdJkc=
+  distributions: sdist bdist_wheel
   on:
     branch: master
