@@ -7,6 +7,8 @@ install: pip install -r requirements.txt
 script:
   - ls 
   - python py_mortgage/tests.py
+  - python -m pip install --upgrade setuptools wheel
+  - python setup.py sdist bdist_wheel
 
 deploy:
   provider: pypi
