@@ -16,5 +16,6 @@ class MyFirstTests(unittest.TestCase):
             total_pmts = new_mortgage_io_false.total_pmts(i)
             self.assertEqual(sum_interest_and_principal, total_pmts)
 
+
 if __name__ == '__main__':
     unittest.main()
