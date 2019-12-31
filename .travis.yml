@@ -8,8 +8,7 @@ script:
 deploy:
   provider: pypi
   user: "__token__"
-  password:
-    secure: ${SECURE_KEY}
+  password: ${PYPI_PASSWORD}
   distributions: sdist bdist_wheel
   on:
     branch: master
